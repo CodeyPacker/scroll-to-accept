@@ -7,7 +7,7 @@ function scrollToAccept() {
   }
 
   function obCallback(payload) {
-    if (payload[0].intersectionRatio === 1) {
+    if (payload[0].intersectionRatio === 1) { // 1 means it's completely visible on the page
       button.disabled = false;
 
       // stop observing since legal has been read
