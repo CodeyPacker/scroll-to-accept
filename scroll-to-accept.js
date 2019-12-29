@@ -9,8 +9,9 @@ function scrollToAccept() {
   function obCallback(payload) {
     if (payload[0].intersectionRatio === 1) {
       button.disabled = false;
-    } else {
-      button.disabled = true;
+
+      // stop observing since legal has been read
+      ob.unobserve(terms.lastElementChild);
     }
   }
 
