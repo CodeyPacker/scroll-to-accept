@@ -1,6 +1,7 @@
 function scrollToAccept() {
   const terms = document.querySelector('.terms-and-conditions');
   const button = document.querySelector('.accept');
+
   if (!terms) {
     return; // exit function since terms doesn't exist
   }
